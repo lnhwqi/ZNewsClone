@@ -39,7 +39,7 @@ img{
     width: 1104px;
     margin: 0 auto;
 }
-/*=============================================*/
+/*===========================================================================================*/
 .header{
     justify-content: center;;
     align-items: center;
@@ -90,14 +90,15 @@ img{
 }
 /*================================================================================*/
 .main{
-    padding: 50px 0 30px 0;
+    margin: 50px 0 30px 0;
 }
 .main .container{
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .main .left-main{
-    max-width: 312px;
+    width: 312px;
+    /* height: 84px; */
 }
 .main .left-main .left-main-item{
     display: flex;
@@ -110,9 +111,10 @@ img{
     border-top: 1px solid #c6c6c6;
 }
 .main .left-main .left-main-item img{
-    width: 40%;
+    width: 128;
+    height: 82px;
 }
-.main .left-main .left-main-item .title{
+.main .left-main .left-main-item .left-item-title{
     margin-left: 12px;
     line-height: 1.4;
     font-weight: 700;
@@ -127,23 +129,25 @@ img{
     flex-direction: column;
     justify-content: start;
     align-content: center;
-    max-width: 492px;
+    width: 532px;
+    margin: 0 20px;
 }
 .main .center-main img{
     width: 100%;
     height: 328px;
 }
-.main .center-main .title{
+.main .center-main .center-title{
     padding: 15px 0 8px 0;
 }
-.main .center-main:hover{
+.main .center-main img:hover+.center-title a{
     color: #04C3FA;
     cursor: pointer;
 }
-.main .center-main .desc{
+.main .center-main .center-desc{
     font-size: 14px;
     color: #444;
     line-height: 1.6;
+    padding-bottom: 10px;
 }
 .main .center-main ul{
     position: relative;
@@ -192,15 +196,23 @@ img{
    cursor: pointer;
 }
 /* ===============================================content - book ==================*/
-.content .book{
+.book{
     width: 100%;
 }
-.content .book-header{
+.book .container{
+    flex-direction: column;
+}
+.book .book-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.book .book-header{
     padding-bottom: 10px;
     border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
 }
-.content .header-title{
+.book .book-title{
     font-size: 20px;
     color: #000;
     font-weight: 700;
@@ -208,27 +220,27 @@ img{
     padding: 0 15px 0 20px;
 
 }
-.content .book .book-list{
+.book .book-list{
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
     position: relative;
 }
-.content .book .book-item{
+.book .book-item{
     width: 200px;
     height: 214px;
     overflow: hidden;
     border: 1px solid #ddd;
     border-radius: 4px;
 }
-.content .book .book-item img{
+.book .book-item img{
     width: 100%;
     height: 136px;
 }
-.content .book .book-item img:hover+.subtitle{
+.book .book-item img:hover+.book-item-title{
     color: #04C3FA;
 }
-.content .book .book-item .subtitle{
+.book .book-item .book-item-title{
     display: block;
     padding: 12px;
     color: #333;
@@ -236,18 +248,17 @@ img{
     font-weight: 700;
 }
 .arrow{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
-    font-size: 12px;
-    padding: 12px;
+    font-size: 16px;
+    padding: 8px;
     background-color:#fff;
+    color: #ccc;
     border: 1px solid #e6e6e6;
     border-radius: 50%;
 }
 .arrow:hover{
     cursor: pointer;
+    color: #04C3FA;
 }
 .fa-arrow-right{
     top: calc( 50% - 12px);
@@ -258,82 +269,86 @@ img{
     top: calc( 50% - 12px);
 }
 /* ============================================multi */
-.content .multi-container{
+.multimedia{
     width: 1162px;
     margin: 0 auto;
     background-color: #ffde76;
+    padding-bottom: 30px;
 }
-.content .multi{
-    width: 100%;
+.multimedia .container{
+    flex-direction: column;
 }
-.content .multi-header{
+.multimedia .media-header{
     margin: 30px 0;
     display: flex;
     align-items: center;
 }
-.content .multi-header ul{
+.multimedia .media-header .media-title{
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.multimedia .media-header ul{
     display: flex;
 }
-.content .multi-header ul a{
+.multimedia .media-header ul a{
     margin-left: 30px;
     font-size: 14px;
     font-weight: 600;
     color: #333;
 }
-.content .multi-content{
+.multimedia .media-content{
     display: flex;
-    margin-bottom: 30px;
 }
-.content .multi-content .multi-content-left{
-    width: 562px;
+.multimedia .media-content .media-content-left{
+    display: block;
+    width: 582px;
     margin-right: 20px;
 }
-.content .multi-content .multi-content-left img{
+.multimedia .media-content .media-content-left img{
     width: 100%;
     height: 360px;
 }
-.content .multi-content .multi-content-left .subtitle{
+.multimedia .media-content .media-content-left .media-left-title{
     display: block;
     margin-top: 16px;
     font-size: 24px;
     font-weight: 700;
     line-height: 1.14;
 }
-.content .multi-content .multi-content-left .desc{
+.multimedia .media-content .media-content-left .media-left-desc{
     margin-top: 10px;
     font-size: 14px;
     color: #333;
     line-height: 1.43;
 }
 
-.content .multi-content .multi-content-right{
+.multimedia .media-content .media-content-right .media-content-list{
     display: grid;
     grid-template-columns: auto auto;
     gap: 20px 16px;
+    width: 100%;
 }
-.content .multi-content .multi-content-right .multi-content-right-item{
+.multimedia .media-content .media-content-right .media-content-right-item{
     width: 260px;
-    /* height: 210px; */
     display: block;
 }
-.content .multi-content .multi-content-right-item img{
+.multimedia .media-content .media-content-right-item img{
     width: 100%;
     height: 180px;
     margin-bottom: 8px;
+    object-fit: cover;
 }
-.content .multi-content .multi-content-right-item .item-title{
+.multimedia .media-content .media-content-right-item .item-title{
     color: #333;
     font-weight: 700;
     font-size: 16px;
 }
 /* ==============================================================daily news */
-.container .wrapper{
-    width: 100%;
-    /* overflow: hidden; */
-}
-.content .daily-news{
+.daily-news{
     display: flex;
-    padding-top: 30px;
+    padding: 30px 0 20px 0;
     width: 100%;
 }
 .daily-news .daily-news-main{
@@ -395,9 +410,11 @@ img{
     margin-bottom: 0;
 }
 .daily-news-sub .read-mostly .read-mostly-item img{
-    width: 92px;
-    height: 80px;
+    width: 74px;
+    height: 74px;
+    object-fit: cover;
     margin-right: 12px;
+    border-radius: 8px;
 }
 .daily-news-sub .read-mostly .read-mostly-item img:hover ~ .title{
     color: #04C3FA;
@@ -443,6 +460,7 @@ img{
 .daily-news-sub .podcast-item img{
     width: 100%;
     border-radius: 4px;
+    object-fit: cover;
 }
 .daily-news-sub .podcast-item:first-child{
     flex-direction: column;
@@ -463,6 +481,7 @@ img{
 .daily-news-sub .podcast-item:not(:first-child) img{
     width: 72px;
     height: 50px;
+    object-fit: cover;
 }
 .daily-news-sub .podcast-item:not(:first-child) .podcast-item-title{
     font-size: 13px;
@@ -473,10 +492,13 @@ img{
 .daily-news-sub .podcast-item:last-child{
     padding-bottom: 0;
 }
+
 /* =========================================news-type-1============== */
-.content .news-type-1{
+.news-type-1{
     padding-top: 40px ;
-    width: 100%;
+}
+.news-type-1 .container{
+    flex-direction: column;
 }
 .content .news-type-1.type-1-last{
     padding-bottom: 40px;
@@ -569,8 +591,12 @@ img{
     font-weight: 700;
     font-size: 14.4px;
 }
-.news-type-2{
-    margin: 20px 0;
+/* =============================================================================== */
+.news-type-2 .container{
+    flex-direction: column;
+}
+.type-2-content{
+    margin: 20px 0 30px 0;
     width: 100%;
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -585,7 +611,7 @@ img{
 .type-2-item .type-2-title{
     line-height: 1.;
     font-weight: 700;
-    font-size: 14.6px;
+    font-size: 17.6px;
     margin: 0 0 20px 15px;
     color: #000;
     cursor: pointer;
@@ -595,7 +621,7 @@ img{
 .type-2-subitem{
     width: 100%;
     display: flex;
-    height: 90;
+    height: 90px;
 }
  .type-2-subitem:nth-child(3n+1){
     display: block;
@@ -619,11 +645,14 @@ img{
 }
 .type-2-subitem:first-child img{
     margin-bottom: 8px;
+    object-fit: cover;
 }
 .type-2-subitem:not(:nth-child(3n+1)) img{
     width: 105px;
     height: 70px;
     margin-right: 8px;
+    object-fit: cover;
+
 }
 .type-2-subitem .title{
     color: #333;
@@ -637,6 +666,10 @@ img{
     font-size: 13.44px;
     font-weight: 700;
     line-height: 1.3;
+}
+/* ============================================================================= */
+.magazine{
+    background-color: #ccc;
 }
 
 
