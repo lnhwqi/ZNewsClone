@@ -5,17 +5,17 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="./assets/styles.css"/>
         <script src="https://kit.fontawesome.com/298cd1d7bc.js" crossorigin="anonymous"></script>
-
+        <link rel="icon" type="image/png" href="./assets/images/fav.jpg">
     </head>
-    <body>
+    <body >
         <header class="header">
-            <div class="container">
+            <div class="container" style="position:relative; z-index: -10;">
                 <div class="logo">
                     <a href="index.html">
                         <img src="./assets/images/logo.svg" alt="logo"/>
                     </a>
                 </div>
-                <nav class="navigate">
+                <nav class="navigate" style="z-index: -2;">
                     <ul>
                         <li><a href="./pages/pageXuatBan.html">Xuất bản</a></li>
                         <li><a href="./pages/pageTacGia.html">Tác giả</a></li>
@@ -25,13 +25,65 @@
                         <li><a href="./pages/pageDoiSong.html">Đời sống</a></li>
                         <li><a href="./pages/pageGiaiTri.html">Giải trí</a></li>
                         <li><a href="./pages/pageTheThao.html">Thể thao</a></li>
-                        <li><a href="#!"><i class="fa-solid fa-ellipsis"></i></a></li>
+                        <li>
+                            <a href="#!">
+                                <i id="more-sign"  class="fa-solid fa-ellipsis header-sign"></i>
+                                <i id="close-sign" class="fa-solid fa-xmark header-sign" style="display: none;"></i>
+                            </a>
+
+                        </li>
                     </ul>
                 </nav>
-                <a class="search" href="#!">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                
+                <a class="search" href="#!" >
+                    <i id="search-btn" class="fa-solid fa-magnifying-glass"  style="z-index:10;"></i>
+                    <div class="search-frame" style="">
+                        <input id="search-bar" type="text" value="Nhập nội dung cần tìm...">                        
+                    </div>
                 </a>
             </div>
+            <table id="more-list" class="more-list" style="display: block">
+                <tr>
+                    <table id="more-list-head" class="more-list-head" style="display:none; position: absolute;">
+                        <tr>
+                            <td><a href="#!">Xuất bản</a></td>
+                            <td><a href="#!">Kinh doanh</a></td>
+                            <td><a href="#!">Công nghệ</a></td>
+                            <td><a href="#!">Đời sống</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#!">Tác giả</a></td>
+                            <td><a href="#!">Sức khỏe</a></td>
+                            <td><a href="#!">Giải trí</a></td>
+                            <td><a href="#!">Thể thao</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#!">Thế giới sách</a></td>
+                            <td><a href="#!">Du lịch</a></td>
+                            <td><a href="#!">Lifestyle</a></td>
+                            <td><a href="#!">Xe</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#!">Cuốn sách tôi đọc</a></td>
+                            <td><a href="#!">Văn hóa đọc</a></td>
+                            <td><a href="#!">Xã hội</a></td>
+                            <td><a href="#!">Cải chính</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#!">Nghiên cứu xuất bản</a></td>
+                            <td><a href="#!">Pháp luật</a></td>
+                        </tr>
+                    </table>
+                </tr>
+                <tr>
+                    <ul id="more-list-bottom" class="more-list-bottom" style="display:none ; position: absolute;">
+                        <li><a href="#!"><img src="https://static.znews.vn/images/channels/podcast_logo_white.svg" alt=""></a></li>
+                        <li><a href="#!"><img src="https://static.znews.vn/images/channels/longform-logo-white_1.svg" alt=""></a></li>
+                        <li><a href="#!"><img src="https://static.znews.vn/images/channels/story-logo-white.svg" alt=""></a></li>
+                        <li><a href="#!"><img src="https://static.znews.vn/images/channels/lens-logo-white_1.svg" alt=""></a></li>
+                    </ul>
+                </tr>
+            </table>
         </header>
         <main class="main">
             <div class="container">
@@ -115,7 +167,7 @@
             <div class="multimedia">
                 <div class="container">
                     <div class="media-header">
-                            <p class="media-title"><a href="#!">Multimedia</a></p>
+                            <p class="media-title">Multimedia</p>
                             <ul>
                                 <li><a href="#!">VIDEO</a></li>
                                 <li><a href="#!">PODCAST</a></li>
@@ -279,19 +331,19 @@
                             <div class="podcast-list">
                                 <div class="podcast-item">
                                     <img src="https://photo.znews.vn/w480/Uploaded/xpivvpib/2024_03_18/thumb_znews_5.jpg" alt="">
-                                    <p] class="podcast-item-title">Gánh nợ thẻ tín dụng gấp 10 lần nợ gốc, xử lý sao?</p>
+                                    <p class="podcast-item-title"><a href="#!">Gánh nợ thẻ tín dụng gấp 10 lần nợ gốc, xử lý sao?</a></p>
                                 </div>
                                 <div class="podcast-item">
                                     <img src="https://photo.znews.vn/w480/Uploaded/xpivvpib/2024_03_14/thumb_znews6_mobile.jpg" alt="">
-                                    <p class="podcast-item-title">Xoay kiểu gì khi cần tiền gấp?</p>
+                                    <p class="podcast-item-title"><a href="#!">Xoay kiểu gì khi cần tiền gấp?</a></p>
                                 </div>
                                 <div class="podcast-item">
                                     <img src="https://photo.znews.vn/w480/Uploaded/xpivvpib/2024_03_06/thumb_znews_7.jpg" alt="">
-                                    <p class="podcast-item-title">Có nên rót tiền mua trái phiếu lúc này?</p>
+                                    <p class="podcast-item-title"><a href="#!">Có nên rót tiền mua trái phiếu lúc này?</a></p>
                                 </div>
                                 <div class="podcast-item">
                                     <img src="https://photo.znews.vn/w480/Uploaded/xpivvpib/2024_02_26/thumb_znews.jpg" alt="">
-                                    <p class="podcast-item-title">2024 có phù hợp để mua nhà?</p>
+                                    <p class="podcast-item-title"><a href="#!">2024 có phù hợp để mua nhà?</a></p>
                                 </div>
                             </div>
                         </div>
@@ -396,15 +448,15 @@
                             <p class="type-2-title">CÔNG NGHỆ</p>
                             <div class="type-2-item-list">
                                 <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w1000/Uploaded/bpivpawv/2024_04_07/Kai.jpg" alt="">
+                                    <img src="https://photo.znews.vn/w1000/Uploaded/bpivpawv/2024_04_07/Kai.jpg" alt="9 biện pháp phòng chống ransomware">
                                     <p class="subitem-title"><a href="#!">9 biện pháp phòng chống ransomware</a></p>
                                 </div>
                                 <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/sfrsm/2024_04_06/TV_TCL_115_inch.jpg" alt="">
+                                    <img src="https://photo.znews.vn/w210/Uploaded/sfrsm/2024_04_06/TV_TCL_115_inch.jpg" alt="TV 115 inch chạy Google TV, giá 700 triệu tại Việt Nam">
                                     <p class="subitem-title"><a href="#!">TV 115 inch chạy Google TV, giá 700 triệu tại Việt Nam</a></p>
                                 </div>
                                 <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/spluaaa/2024_04_07/alamy_1712460573.jpg" alt="">
+                                    <img src="https://photo.znews.vn/w210/Uploaded/spluaaa/2024_04_07/alamy_1712460573.jpg" alt="Đây là con đường dài nhất thế giới">
                                     <p class="subitem-title"><a href="#!">Đây là con đường dài nhất thế giới</a></p>
                                 </div>
                             </div>
@@ -413,15 +465,15 @@
                             <p class="type-2-title">SỨC KHỎE</p>
                             <div class="type-2-item-list">
                                 <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w360/Uploaded/yrfjpyesfly/2024_04_06/bermix_studio_kinSYGfBSzc_unsplash.jpg" alt="">
+                                    <img src="https://photo.znews.vn/w360/Uploaded/yrfjpyesfly/2024_04_06/bermix_studio_kinSYGfBSzc_unsplash.jpg" alt="Nhiều trẻ gặp biến chứng do nhiễm RSV">
                                     <p class="subitem-title"><a href="#!">Nhiều trẻ gặp biến chứng do nhiễm RSV</a></p>
                                 </div>
                                 <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/rotnrz/2024_04_07/san_giat.jpg" alt="">
+                                    <img src="https://photo.znews.vn/w210/Uploaded/rotnrz/2024_04_07/san_giat.jpg" alt="Mổ lấy thai cứu sản phụ tiền sản giật nặng, phù toàn thân">
                                     <p class="subitem-title"><a href="#!">Mổ lấy thai cứu sản phụ tiền sản giật nặng, phù toàn thân</a></p>
                                 </div>
                                 <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/yrfjpyesfly/2024_04_06/virus_featured_image.jpg" alt="">
+                                    <img src="https://photo.znews.vn/w210/Uploaded/yrfjpyesfly/2024_04_06/virus_featured_image.jpg" alt="Liên tiếp xuất hiện ca nhiễm cúm gia cầm, chuyện gì đang xảy ra?">
                                     <p class="subitem-title"><a href="#!">Liên tiếp xuất hiện ca nhiễm cúm gia cầm, chuyện gì đang xảy ra?</a></p>
                                 </div>
                             </div>
@@ -430,15 +482,15 @@
                             <p class="type-2-title">ĐỜI SỐNG</p>
                             <div class="type-2-item-list">
                                 <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w360/Uploaded/gtntnn/2024_02_19/gay.jpg" alt="">
+                                    <img src="https://photo.znews.vn/w360/Uploaded/gtntnn/2024_02_19/gay.jpg" alt="Cơn sốt 'yêu gậy'">
                                     <p class="subitem-title"><a href="#!">Cơn sốt 'yêu gậy'</a></p>
                                 </div>
                                 <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/zagtgt/2024_04_07/action_comics_1_kansas_city_pedigree_heritage_auctions_bars.jpg" alt="">
+                                    <img src="https://photo.znews.vn/w210/Uploaded/zagtgt/2024_04_07/action_comics_1_kansas_city_pedigree_heritage_auctions_bars.jpg" alt="Cuốn truyện tranh Superman 6 triệu USD">
                                     <p class="subitem-title"><a href="#!">Cuốn truyện tranh Superman 6 triệu USD</a></p>
                                 </div>
                                 <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/tnasgo/2024_04_07/6c41828a_bbad_444d_b5c1_36fc82d3674c_2a740231_11zon.png" alt="">
+                                    <img src="https://photo.znews.vn/w210/Uploaded/tnasgo/2024_04_07/6c41828a_bbad_444d_b5c1_36fc82d3674c_2a740231_11zon.png" alt="Gió mạnh cuốn người rơi từ căn hộ chung cư xuống đất">
                                     <p class="subitem-title"><a href="#!">Gió mạnh cuốn người rơi từ căn hộ chung cư xuống đất</a></p>
                                 </div>
                             </div>
@@ -448,51 +500,191 @@
                             <p class="type-2-title">DU LỊCH</p>
                             <div class="type-2-item-list">
                                 <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w360/Uploaded/ayhunwa/2024_04_07/snapedit_1712478426308.jpeg" alt="">
+                                    <img src="https://photo.znews.vn/w360/Uploaded/ayhunwa/2024_04_07/snapedit_1712478426308.jpeg" alt="Instagram 'chiều hư' đầu bếp trẻ">
                                     <p class="subitem-title"><a href="#!">Instagram 'chiều hư' đầu bếp trẻ</a></p>
                                 </div>
                                 <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/anqyy/2024_04_06/118615984_2729714767313541_6376484958661980323_n.jpeg" alt="">
+                                    <img src="https://photo.znews.vn/w210/Uploaded/anqyy/2024_04_06/118615984_2729714767313541_6376484958661980323_n.jpeg" alt="Tìm ra bãi biển xanh nhất thế giới">
                                     <p class="subitem-title"><a href="#!">Tìm ra bãi biển xanh nhất thế giới</a></p>
                                 </div>
                                 <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/anqyy/2024_04_06/341537652_253770603693696_6792478259427287730_n.jpeg" alt="">
+                                    <img src="https://photo.znews.vn/w210/Uploaded/anqyy/2024_04_06/341537652_253770603693696_6792478259427287730_n.jpeg" alt="Những điều đừng quên khi đi Phuket té nước">
                                     <p class="subitem-title"><a href="#!">Những điều đừng quên khi đi Phuket té nước</a></p>
                                 </div>
                             </div>
                             
                         </div>
                         <div class="type-2-item">
-                            <p class="type-2-title">CÔNG NGHỆ</p>
+                            <p class="type-2-title">GIẢI TRÍ</p>
                             <div class="type-2-item-list">
                                 <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w1000/Uploaded/bpivpawv/2024_04_07/Kai.jpg" alt="">
-                                    <p class="subitem-title"><a href="#!">9 biện pháp phòng chống ransomware</a></p>
+                                    <img src="https://photo.znews.vn/w360/Uploaded/qfssu/2024_04_26/suni_ha_linh_de_choat3_PWMN.jpg" alt="Suni Hạ Linh có sai lầm?">
+                                    <p class="subitem-title"><a href="#!">Suni Hạ Linh có sai lầm?</a></p>
                                 </div>
                                 <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/sfrsm/2024_04_06/TV_TCL_115_inch.jpg" alt="">
-                                    <p class="subitem-title"><a href="#!">TV 115 inch chạy Google TV, giá 700 triệu tại Việt Nam</a></p>
+                                    <img src="https://photo.znews.vn/w210/Uploaded/wpdhnwhnw/2024_04_26/431360231_10161788686373708_7709.jpg" alt="Huỳnh Anh và Bạch Lan Phương trước khi kết hôn">
+                                    <p class="subitem-title"><a href="#!">Huỳnh Anh và Bạch Lan Phương trước khi kết hôn</a></p>
                                 </div>
                                 <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/spluaaa/2024_04_07/alamy_1712460573.jpg" alt="">
-                                    <p class="subitem-title"><a href="#!">Đây là con đường dài nhất thế giới</a></p>
+                                    <img src="https://photo.znews.vn/w210/Uploaded/qfssu/2024_04_26/bomiapinkxinhdep6_6612_1_.jpeg" alt="Sao Hàn bị tạm giữ ở Bali">
+                                    <p class="subitem-title"><a href="#!">Sao Hàn bị tạm giữ ở Bali</a></p>
                                 </div>
                             </div>
                         </div>
                         <div class="type-2-item">
-                            <p class="type-2-title">SỨC KHỎE</p>
+                            <p class="type-2-title">THỂ THAO</p>
                             <div class="type-2-item-list">
                                 <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w360/Uploaded/yrfjpyesfly/2024_04_06/bermix_studio_kinSYGfBSzc_unsplash.jpg" alt="">
-                                    <p class="subitem-title"><a href="#!">Nhiều trẻ gặp biến chứng do nhiễm RSV</a></p>
+                                    <img src="https://photo.znews.vn/w360/Uploaded/bpivpawv/2024_04_26/qv.jpg" alt="U23 Việt Nam bị loại ở tứ kết giải châu Á">
+                                    <p class="subitem-title"><a href="#!">U23 Việt Nam bị loại ở tứ kết giải châu Á</a></p>
                                 </div>
                                 <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/rotnrz/2024_04_07/san_giat.jpg" alt="">
-                                    <p class="subitem-title"><a href="#!">Mổ lấy thai cứu sản phụ tiền sản giật nặng, phù toàn thân</a></p>
+                                    <img src="https://photo.znews.vn/w210/Uploaded/mfnuy/2024_04_27/baongoc_znews.jpg" alt="HLV Hoàng Anh Tuấn: 'U23 Việt Nam chơi thứ bóng đá đẹp mắt'">
+                                    <p class="subitem-title"><a href="#!">HLV Hoàng Anh Tuấn: 'U23 Việt Nam chơi thứ bóng đá đẹp mắt'</a></p>
                                 </div>
                                 <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/yrfjpyesfly/2024_04_06/virus_featured_image.jpg" alt="">
-                                    <p class="subitem-title"><a href="#!">Liên tiếp xuất hiện ca nhiễm cúm gia cầm, chuyện gì đang xảy ra?</a></p>
+                                    <img src="https://photo.znews.vn/w210/Uploaded/bpivpawv/2024_04_26/vanchuan_1.jpeg" alt="Văn Chuẩn nhận sai">
+                                    <p class="subitem-title"><a href="#!">Văn Chuẩn nhận sai</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="type-2-item">
+                            <p class="type-2-title">XÃ HỘI</p>
+                            <div class="type-2-item-list">
+                                <div class="type-2-subitem">
+                                    <img src="https://photo.znews.vn/w360/Uploaded/oplukaa/2024_04_24/N.jpg" alt="Tan ca về phòng trọ, phát hiện bạn gái treo cổ tử vong">
+                                    <p class="subitem-title"><a href="#!">Tan ca về phòng trọ, phát hiện bạn gái treo cổ tử vong</a></p>
+                                </div>
+                                <div class="type-2-subitem">
+                                    <img src="https://photo.znews.vn/w210/Uploaded/oplukaa/2024_04_24/XH.JPG" alt="Phát hiện cô gái chết 1,5 năm trong căn hộ cao cấp ở Hà Nội">
+                                    <p class="subitem-title"><a href="#!">Phát hiện cô gái chết 1,5 năm trong căn hộ cao cấp ở Hà Nội</a></p>
+                                </div>
+                                <div class="type-2-subitem">
+                                    <img src="https://photo.znews.vn/w210/Uploaded/oplukaa/2024_04_24/Bac.JPG" alt="Dông lốc, mưa đá và nắng nóng gia tăng ở Bắc Bộ trong tháng 5">
+                                    <p class="subitem-title"><a href="#!">Dông lốc, mưa đá và nắng nóng gia tăng ở Bắc Bộ trong tháng 5</a></p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="type-2-item">
+                            <p class="type-2-title">PHÁP LUẬT</p>
+                            <div class="type-2-item-list">
+                                <div class="type-2-subitem">
+                                    <img src="https://photo.znews.vn/Uploaded/oplukaa/2024_04_19/L1.gif" alt="Bà Trương Mỹ Lan kháng cáo toàn bộ bản án sơ thẩm">
+                                    <p class="subitem-title"><a href="#!">Bà Trương Mỹ Lan kháng cáo toàn bộ bản án sơ thẩm</a></p>
+                                </div>
+                                <div class="type-2-subitem">
+                                    <img src="https://photo.znews.vn/w210/Uploaded/sgtnrn/2024_04_20/AIC.png" alt="Cựu GĐ Trung tâm Công nghệ sinh học TP.HCM bị cáo buộc nhận hối lộ">
+                                    <p class="subitem-title"><a href="#!">Cựu GĐ Trung tâm Công nghệ sinh học TP.HCM bị cáo buộc nhận hối lộ</a></p>
+                                </div>
+                                <div class="type-2-subitem">
+                                    <img src="https://photo.znews.vn/w210/Uploaded/oplukaa/2024_04_19/R1.jpg" alt="Chủ tiệm ở Đắk Nông nhận lại 3,5 kg vàng bị trộm">
+                                    <p class="subitem-title"><a href="#!">Chủ tiệm ở Đắk Nông nhận lại 3,5 kg vàng bị trộm</a></p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="type-2-item">
+                            <p class="type-2-title">XUẤT BẢN</p>
+                            <div class="type-2-item-list">
+                                <div class="type-2-subitem">
+                                    <img src="https://photo.znews.vn/w360/Uploaded/piqbzcvo/2024_04_27/slam_dunk_basketball_comic_art_hd_wallpaper_preview.jpeg" alt="">
+                                    <p class="subitem-title"><a href="#!">‘Slam Dunk’ sắp có ‘tấm áo’ mới tại Indonesia</a></p>
+                                </div>
+                                <div class="type-2-subitem">
+                                    <img src="https://photo.znews.vn/w210/Uploaded/zgsgtn/2024_04_26/Chu_tich_TGD_NXB_Giao_duc_Viet_Nam.jpg" alt="Ông Nguyễn Tiến Thanh làm Tổng giám đốc NXB Giáo dục">
+                                    <p class="subitem-title"><a href="#!">Ông Nguyễn Tiến Thanh làm Tổng giám đốc NXB Giáo dục</a></p>
+                                </div>
+                                <div class="type-2-subitem">
+                                    <img src="https://photo.znews.vn/w210/Uploaded/jopluat/2024_04_24/1_5.jpg" alt="Đưa văn hóa đọc thấm vào đời sống bộ đội">
+                                    <p class="subitem-title"><a href="#!">Đưa văn hóa đọc thấm vào đời sống bộ đội</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="type-2-item">
+                            <p class="type-2-title">THẾ GIỚI SÁCH</p>
+                            <div class="type-2-item-list">
+                                <div class="type-2-subitem">
+                                    <img src="https://photo.znews.vn/w360/Uploaded/znang2/2024_04_25/dbp2.jpeg" alt="Giây phút đối mặt với cái chết của chiến sĩ trận Điện Biên Phủ">
+                                    <p class="subitem-title"><a href="#!">Giây phút đối mặt với cái chết của chiến sĩ trận Điện Biên Phủ</a></p>
+                                </div>
+                                <div class="type-2-subitem">
+                                    <img src="https://photo.znews.vn/w210/Uploaded/jopluat/2024_04_24/tran_phu_son_tung_1.jpg" alt="Truyện ký về Tổng Bí thư Trần Phú">
+                                    <p class="subitem-title"><a href="#!">Truyện ký về Tổng Bí thư Trần Phú</a></p>
+                                </div>
+                                <div class="type-2-subitem">
+                                    <img src="https://photo.znews.vn/w210/Uploaded/mzdgi/2024_04_25/thumb_720_450_910.jpg" alt="Chăn cừu là một nghệ thuật">
+                                    <p class="subitem-title"><a href="#!">Chăn cừu là một nghệ thuật</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="type-2-item">
+                            <p class="type-2-title">GIÁO DỤC</p>
+                            <div class="type-2-item-list">
+                                <div class="type-2-subitem">
+                                    <img src="https://photo.znews.vn/w360/Uploaded/hointt/2024_04_27/250.jpeg" alt="Thế hệ tìm nơi 'trú ẩn' an toàn tại Trung Quốc">
+                                    <p class="subitem-title"><a href="#!">Thế hệ tìm nơi 'trú ẩn' an toàn tại Trung Quốc</a></p>
+                                </div>
+                                <div class="type-2-subitem">
+                                    <img src="https://photo.znews.vn/w210/Uploaded/neg_esfjaex/2024_04_26/z4377461160678_a7425d7a1762e58ac.jpg" alt="‘Nhẹ người' vì chọn học nghề thay vì vào lớp 10 công lập">
+                                    <p class="subitem-title"><a href="#!">‘Nhẹ người' vì chọn học nghề thay vì vào lớp 10 công lập</a></p>
+                                </div>
+                                <div class="type-2-subitem">
+                                    <img src="https://photo.znews.vn/w210/Uploaded/neg_esfjaex/2024_04_26/image_5_.jpg" alt="'Ác mộng' đã đến với trường học Philippines">
+                                    <p class="subitem-title"><a href="#!">'Ác mộng' đã đến với trường học Philippines</a></p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="type-2-item">
+                            <p class="type-2-title">XE</p>
+                            <div class="type-2-item-list">
+                                <div class="type-2-subitem">
+                                    <img src="https://photo.znews.vn/w360/Uploaded/yqdlmdxwp/2024_04_26/chery_105_jpg_662ab543410f9.jpg" alt="Thấy gì từ triển lãm ôtô lớn nhất thế giới trong năm nay?">
+                                    <p class="subitem-title"><a href="#!">Thấy gì từ triển lãm ôtô lớn nhất thế giới trong năm nay?</a></p>
+                                </div>
+                                <div class="type-2-subitem">
+                                    <img src="https://photo.znews.vn/w210/Uploaded/bpivptvl/2024_04_25/744x0_1_autohomecar_ChxoHmYqHTWAVgH6AA21VmBRwVg647.jpg" alt="Toyota ra mắt 2 xe thuần điện mới">
+                                    <p class="subitem-title"><a href="#!">Toyota ra mắt 2 xe thuần điện mới</a></p>
+                                </div>
+                                <div class="type-2-subitem">
+                                    <img src="https://photo.znews.vn/w210/Uploaded/aobhuua/2024_04_26/Porsche_911_GT3_RS_Crash.jpg" alt="Mới được bàn giao, Porsche 911 GT3 RS mới tinh chìm nghỉm dưới sông">
+                                    <p class="subitem-title"><a href="#!">Mới được bàn giao, Porsche 911 GT3 RS mới tinh chìm nghỉm dưới sông</a></p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="type-2-item">
+                            <p class="type-2-title">TÁC GIẢ</p>
+                            <div class="type-2-item-list">
+                                <div class="type-2-subitem">
+                                    <img src="https://photo.znews.vn/w360/Uploaded/zgsgtn/2024_04_14/thumb_Thanh_Nam.jpg" alt="Văn hóa 'Đek biết gì cũng tiến' của FPT">
+                                    <p class="subitem-title"><a href="#!">Văn hóa 'Đek biết gì cũng tiến' của FPT</a></p>
+                                </div>
+                                <div class="type-2-subitem">
+                                    <img src="https://photo.znews.vn/w210/Uploaded/zgsgtn/2024_04_22/DTT._Anh_Le_Nhat_Quang_Huy.jpg" alt="'Chỉ có bạn mới tự chọn được cuốn sách cuộc đời mình'">
+                                    <p class="subitem-title"><a href="#!">'Chỉ có bạn mới tự chọn được cuốn sách cuộc đời mình'</a></p>
+                                </div>
+                                <div class="type-2-subitem">
+                                    <img src="https://photo.znews.vn/w210/Uploaded/jopluat/2024_04_24/anh_sc_nbinh_1_a_1446.jpg" alt="Sư cô tiết lộ cuốn sách giúp ích cho hàng nghìn phạm nhân">
+                                    <p class="subitem-title"><a href="#!">Sư cô tiết lộ cuốn sách giúp ích cho hàng nghìn phạm nhân</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="type-2-item">
+                            <p class="type-2-title">CUỐN SÁCH TÔI ĐỌC</p>
+                            <div class="type-2-item-list">
+                                <div class="type-2-subitem">
+                                    <img src="https://photo.znews.vn/w360/Uploaded/sgtnrn/2024_04_14/42962239_1903982383027216_226733.jpg" alt="Khi số phận thăng trầm cùng thời đại">
+                                    <p class="subitem-title"><a href="#!">Khi số phận thăng trầm cùng thời đại</a></p>
+                                </div>
+                                <div class="type-2-subitem">
+                                    <img src="https://photo.znews.vn/w210/Uploaded/qoswae/2024_04_14/Review_phim_dau_truong_sinh_tu_3.jpg" alt="10 loạt tiểu thuyết hay nhất mọi thời đại">
+                                    <p class="subitem-title"><a href="#!">10 loạt tiểu thuyết hay nhất mọi thời đại</a></p>
+                                </div>
+                                <div class="type-2-subitem">
+                                    <img src="https://photo.znews.vn/w210/Uploaded/jopluat/2024_04_08/a9_LE_auto_x2.jpg" alt="Di sản văn minh phương Đông của chúng ta">
+                                    <p class="subitem-title"><a href="#!">Di sản văn minh phương Đông của chúng ta</a></p>
                                 </div>
                             </div>
                         </div>
@@ -500,174 +692,34 @@
                             <p class="type-2-title">ĐỜI SỐNG</p>
                             <div class="type-2-item-list">
                                 <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w360/Uploaded/gtntnn/2024_02_19/gay.jpg" alt="">
-                                    <p class="subitem-title"><a href="#!">Cơn sốt 'yêu gậy'</a></p>
+                                    <img src="https://photo.znews.vn/w360/Uploaded/zgsgtn/2024_03_06/dune_1_.jpg" alt="Độc giả Việt từng không mấy mặn mà với 'Xứ cát'">
+                                    <p class="subitem-title"><a href="#!">Độc giả Việt từng không mấy mặn mà với 'Xứ cát'</a></p>
                                 </div>
                                 <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/zagtgt/2024_04_07/action_comics_1_kansas_city_pedigree_heritage_auctions_bars.jpg" alt="">
-                                    <p class="subitem-title"><a href="#!">Cuốn truyện tranh Superman 6 triệu USD</a></p>
+                                    <img src="https://photo.znews.vn/w210/Uploaded/jopluat/2024_04_24/161210Nhieu_hoat_dong_tao_hung_t.jpg" alt="Đọc sách trong thời đại công nghệ số">
+                                    <p class="subitem-title"><a href="#!">Đọc sách trong thời đại công nghệ số</a></p>
                                 </div>
                                 <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/tnasgo/2024_04_07/6c41828a_bbad_444d_b5c1_36fc82d3674c_2a740231_11zon.png" alt="">
-                                    <p class="subitem-title"><a href="#!">Gió mạnh cuốn người rơi từ căn hộ chung cư xuống đất</a></p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="type-2-item">
-                            <p class="type-2-title">DU LỊCH</p>
-                            <div class="type-2-item-list">
-                                <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w360/Uploaded/ayhunwa/2024_04_07/snapedit_1712478426308.jpeg" alt="">
-                                    <p class="subitem-title"><a href="#!">Instagram 'chiều hư' đầu bếp trẻ</a></p>
-                                </div>
-                                <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/anqyy/2024_04_06/118615984_2729714767313541_6376484958661980323_n.jpeg" alt="">
-                                    <p class="subitem-title"><a href="#!">Tìm ra bãi biển xanh nhất thế giới</a></p>
-                                </div>
-                                <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/anqyy/2024_04_06/341537652_253770603693696_6792478259427287730_n.jpeg" alt="">
-                                    <p class="subitem-title"><a href="#!">Những điều đừng quên khi đi Phuket té nước</a></p>
+                                    <img src="https://photo.znews.vn/w210/Uploaded/jopluat/2024_04_17/20230920f0883f72fbbd42699a342623.jpg" alt="Ngày Sách và Bản quyền thế giới: Dấu ấn đọc của mỗi quốc gia">
+                                    <p class="subitem-title"><a href="#!">Ngày Sách và Bản quyền thế giới: Dấu ấn đọc của mỗi quốc gia</a></p>
                                 </div>
                             </div>
                             
                         </div>
                         <div class="type-2-item">
-                            <p class="type-2-title">CÔNG NGHỆ</p>
+                            <p class="type-2-title">TTDN</p>
                             <div class="type-2-item-list">
                                 <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w1000/Uploaded/bpivpawv/2024_04_07/Kai.jpg" alt="">
-                                    <p class="subitem-title"><a href="#!">9 biện pháp phòng chống ransomware</a></p>
+                                    <img src="https://photo.znews.vn/w360/Uploaded/wyhktpu/2024_04_26/image001_1.png" alt="Ngân hàng Bắc Á lãi trước thuế hơn 1.000 tỷ đồng, tỷ lệ nợ xấu thấp">
+                                    <p class="subitem-title"><a href="#!">Ngân hàng Bắc Á lãi trước thuế hơn 1.000 tỷ đồng, tỷ lệ nợ xấu thấp</a></p>
                                 </div>
                                 <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/sfrsm/2024_04_06/TV_TCL_115_inch.jpg" alt="">
-                                    <p class="subitem-title"><a href="#!">TV 115 inch chạy Google TV, giá 700 triệu tại Việt Nam</a></p>
+                                    <img src="https://photo.znews.vn/w210/Uploaded/wyhktpu/2024_04_25/h3.jpg" alt="Dự án Charm Diamond thi công ngày đêm, đẩy nhanh tiến độ xây dựng">
+                                    <p class="subitem-title"><a href="#!">Dự án Charm Diamond thi công ngày đêm, đẩy nhanh tiến độ xây dựng</a></p>
                                 </div>
                                 <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/spluaaa/2024_04_07/alamy_1712460573.jpg" alt="">
-                                    <p class="subitem-title"><a href="#!">Đây là con đường dài nhất thế giới</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="type-2-item">
-                            <p class="type-2-title">SỨC KHỎE</p>
-                            <div class="type-2-item-list">
-                                <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w360/Uploaded/yrfjpyesfly/2024_04_06/bermix_studio_kinSYGfBSzc_unsplash.jpg" alt="">
-                                    <p class="subitem-title"><a href="#!">Nhiều trẻ gặp biến chứng do nhiễm RSV</a></p>
-                                </div>
-                                <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/rotnrz/2024_04_07/san_giat.jpg" alt="">
-                                    <p class="subitem-title"><a href="#!">Mổ lấy thai cứu sản phụ tiền sản giật nặng, phù toàn thân</a></p>
-                                </div>
-                                <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/yrfjpyesfly/2024_04_06/virus_featured_image.jpg" alt="">
-                                    <p class="subitem-title"><a href="#!">Liên tiếp xuất hiện ca nhiễm cúm gia cầm, chuyện gì đang xảy ra?</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="type-2-item">
-                            <p class="type-2-title">ĐỜI SỐNG</p>
-                            <div class="type-2-item-list">
-                                <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w360/Uploaded/gtntnn/2024_02_19/gay.jpg" alt="">
-                                    <p class="subitem-title"><a href="#!">Cơn sốt 'yêu gậy'</a></p>
-                                </div>
-                                <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/zagtgt/2024_04_07/action_comics_1_kansas_city_pedigree_heritage_auctions_bars.jpg" alt="">
-                                    <p class="subitem-title"><a href="#!">Cuốn truyện tranh Superman 6 triệu USD</a></p>
-                                </div>
-                                <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/tnasgo/2024_04_07/6c41828a_bbad_444d_b5c1_36fc82d3674c_2a740231_11zon.png" alt="">
-                                    <p class="subitem-title"><a href="#!">Gió mạnh cuốn người rơi từ căn hộ chung cư xuống đất</a></p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="type-2-item">
-                            <p class="type-2-title">DU LỊCH</p>
-                            <div class="type-2-item-list">
-                                <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w360/Uploaded/ayhunwa/2024_04_07/snapedit_1712478426308.jpeg" alt="">
-                                    <p class="subitem-title"><a href="#!">Instagram 'chiều hư' đầu bếp trẻ</a></p>
-                                </div>
-                                <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/anqyy/2024_04_06/118615984_2729714767313541_6376484958661980323_n.jpeg" alt="">
-                                    <p class="subitem-title"><a href="#!">Tìm ra bãi biển xanh nhất thế giới</a></p>
-                                </div>
-                                <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/anqyy/2024_04_06/341537652_253770603693696_6792478259427287730_n.jpeg" alt="">
-                                    <p class="subitem-title"><a href="#!">Những điều đừng quên khi đi Phuket té nước</a></p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="type-2-item">
-                            <p class="type-2-title">CÔNG NGHỆ</p>
-                            <div class="type-2-item-list">
-                                <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w1000/Uploaded/bpivpawv/2024_04_07/Kai.jpg" alt="">
-                                    <p class="subitem-title"><a href="#!">9 biện pháp phòng chống ransomware</a></p>
-                                </div>
-                                <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/sfrsm/2024_04_06/TV_TCL_115_inch.jpg" alt="">
-                                    <p class="subitem-title"><a href="#!">TV 115 inch chạy Google TV, giá 700 triệu tại Việt Nam</a></p>
-                                </div>
-                                <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/spluaaa/2024_04_07/alamy_1712460573.jpg" alt="">
-                                    <p class="subitem-title"><a href="#!">Đây là con đường dài nhất thế giới</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="type-2-item">
-                            <p class="type-2-title">SỨC KHỎE</p>
-                            <div class="type-2-item-list">
-                                <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w360/Uploaded/yrfjpyesfly/2024_04_06/bermix_studio_kinSYGfBSzc_unsplash.jpg" alt="">
-                                    <p class="subitem-title"><a href="#!">Nhiều trẻ gặp biến chứng do nhiễm RSV</a></p>
-                                </div>
-                                <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/rotnrz/2024_04_07/san_giat.jpg" alt="">
-                                    <p class="subitem-title"><a href="#!">Mổ lấy thai cứu sản phụ tiền sản giật nặng, phù toàn thân</a></p>
-                                </div>
-                                <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/yrfjpyesfly/2024_04_06/virus_featured_image.jpg" alt="">
-                                    <p class="subitem-title"><a href="#!">Liên tiếp xuất hiện ca nhiễm cúm gia cầm, chuyện gì đang xảy ra?</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="type-2-item">
-                            <p class="type-2-title">ĐỜI SỐNG</p>
-                            <div class="type-2-item-list">
-                                <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w360/Uploaded/gtntnn/2024_02_19/gay.jpg" alt="">
-                                    <p class="subitem-title"><a href="#!">Cơn sốt 'yêu gậy'</a></p>
-                                </div>
-                                <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/zagtgt/2024_04_07/action_comics_1_kansas_city_pedigree_heritage_auctions_bars.jpg" alt="">
-                                    <p class="subitem-title"><a href="#!">Cuốn truyện tranh Superman 6 triệu USD</a></p>
-                                </div>
-                                <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/tnasgo/2024_04_07/6c41828a_bbad_444d_b5c1_36fc82d3674c_2a740231_11zon.png" alt="">
-                                    <p class="subitem-title"><a href="#!">Gió mạnh cuốn người rơi từ căn hộ chung cư xuống đất</a></p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="type-2-item">
-                            <p class="type-2-title">DU LỊCH</p>
-                            <div class="type-2-item-list">
-                                <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w360/Uploaded/ayhunwa/2024_04_07/snapedit_1712478426308.jpeg" alt="">
-                                    <p class="subitem-title"><a href="#!">Instagram 'chiều hư' đầu bếp trẻ</a></p>
-                                </div>
-                                <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/anqyy/2024_04_06/118615984_2729714767313541_6376484958661980323_n.jpeg" alt="">
-                                    <p class="subitem-title"><a href="#!">Tìm ra bãi biển xanh nhất thế giới</a></p>
-                                </div>
-                                <div class="type-2-subitem">
-                                    <img src="https://photo.znews.vn/w210/Uploaded/anqyy/2024_04_06/341537652_253770603693696_6792478259427287730_n.jpeg" alt="">
-                                    <p class="subitem-title"><a href="#!">Những điều đừng quên khi đi Phuket té nước</a></p>
+                                    <img src="https://photo.znews.vn/w210/Uploaded/wyhktpu/2024_04_25/CTKM35_1.JPG" alt="Saigon Co.op tung khuyến mại sinh nhật lớn nhất từ trước đến nay">
+                                    <p class="subitem-title"><a href="#!">Saigon Co.op tung khuyến mại sinh nhật lớn nhất từ trước đến nay</a></p>
                                 </div>
                             </div>
                             
@@ -678,31 +730,104 @@
             
             <div class="magazine">
                 <div class="container">
-                    <div class="heading-title">Magazine</div>
+                    <div class="magazine-title">Magazine</div>
+                    <div class="maga-content">
+                        <div class="maga-item maga-item-1">
+                            <div class="categorize">LENS</div>
+                            <p class="maga-item-title">Biệt đội lấy máu của bệnh viện tuyến cuối phía Nam</p>
+                            <i class="fa-solid fa-sign-hanging sign"></i>
+                        </div>
+                        <div class="maga-item maga-item-2">
+                            <div class="categorize">TL;DR</div>
+                            <p class="maga-item-title">Công thức thống lĩnh YouTube của MrBeast đang chết</p>
+                            <i class="fa-regular fa-bookmark sign"></i>
+                        </div>
+                        <div class="maga-item maga-item-3">
+                            <div class="categorize">TL;DR</div>
+                            <p class="maga-item-title">Toàn bộ thiết kế iPhone 16 dựng từ ảnh rò rỉ</p>
+                            <i class="fa-regular fa-bookmark sign"></i>
+                        </div>
+                        <div class="maga-item maga-item-4">
+                            <div class="categorize">TL;DR</div>
+                            <p class="maga-item-title">Bắn muối lên trời để che bớt nắng</p>
+                            <i class="fa-regular fa-bookmark sign"></i>
+                        </div>
+                    </div>
                 </div>
-                <div class="mega-content">
-                    <div class="mega-item">
-                        <div class="categorize"></div>
-                        <p class="mega-item-title"></p>
-                        <i class="fa-regular fa-bookmark"></i>
-                    </div>
-                    <div class="mega-item">
-                        <div class="categorize"></div>
-                        <p class="mega-item-title"></p>
-                        <i class="fa-regular fa-bookmark"></i>
-                    </div>
-                    <div class="mega-item">
-                        <div class="categorize"></div>
-                        <p class="mega-item-title"></p>
-                        <i class="fa-regular fa-bookmark"></i>
-                    </div>
-                    <div class="mega-item">
-                        <div class="categorize"></div>
-                        <p class="mega-item-title"></p>
-                        <i class="fa-regular fa-bookmark"></i>
+            </div>
+
+            <div class="video">
+                <div class="container">
+                    <div class="video-title">Video</div>
+                    <div class="video-content">
+                        <div class="video-main">
+                            <video controls muted>
+                                <source src="http://haignet.co.uk/html5-video-element-test.mp4" type="video/mp4"/>
+                            </video>
+                        </div>
+                        <div class="video-list">
+                            <div class="video-item">
+                                <img src="https://photo.znews.vn/w210/Uploaded/bpivpawv/2024_04_27/G5_6122_1.jpg" alt="">
+                                <i class="fa-solid fa-play start-icon"></i>
+                                <div class="video-item-title"><a href="#!">Uzbekistan biến Saudi Arabia thành cựu vương U23 châu Á</a></div>
+                            </div>
+                            <div class="video-item">
+                                <img src="https://photo.znews.vn/w210/Uploaded/oplukaa/2024_04_26/OOo.jpg" alt="">
+                                <i class="fa-solid fa-play start-icon"></i>
+                                <div class="video-item-title"><a href="#!">Ô tô mất lái húc đổ trụ bơm xăng ở Đồng Tháp</a></div>
+                            </div>
+                            <div class="video-item">
+                                <img src="https://photo.znews.vn/w210/Uploaded/sotnbn/2024_04_25/Thiet_ke_chua_co_ten.jpg" alt="">
+                                <i class="fa-solid fa-play start-icon"></i>
+                                <div class="video-item-title"><a href="#!">Hốt hoảng thấy ngựa chạy tán loạn giữa đường phố London</a></div>
+                            </div>
+                            <div class="video-item">
+                                <img src="https://photo.znews.vn/w210/Uploaded/oplukaa/2024_04_26/Ngao.JPG" alt="">
+                                <i class="fa-solid fa-play start-icon"></i>
+                                <div class="video-item-title"><a href="#!">Gã đàn ông tấn công, đạp đổ xe nhiều phụ nữ trên đường</a></div>
+                            </div>
+                            <div class="video-item">
+                                <img src="https://photo.znews.vn/w210/Uploaded/neg_esfjaex/2024_03_02/a1.jpg" alt="">
+                                <i class="fa-solid fa-play start-icon"></i>
+                                <div class="video-item-title"><a href="#!">Công nghệ thẩm mỹ học khó, tốt nghiệp cũng không hề dễ</a></div>
+                            </div>
+                            <div class="video-item">
+                                <img src="https://photo.znews.vn/w210/Uploaded/oplukaa/2024_04_25/Bui.jpg" alt="">
+                                <i class="fa-solid fa-play start-icon"></i>
+                                <div class="video-item-title"><a href="#!">Bụi mịt mù trên cao tốc Nha Trang - Cam Lâm</a></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <footer class="footer">
+            <div class="container">
+                <table>
+                    <tr>
+                        <td>Tạp chí điện tử Tri thức</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Cơ quan chủ quản: Hội Xuất bản Việt Nam</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Giấy phép báo chí: số 75/GP-BTTTT và số 442/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 26/02/2020 và ngày 29/11/2023</td>
+                        <td>Tòa soạn: Tầng 10, D29 Phạm Văn Bạch, Quận Cầu Giấy, Hà Nội</td>
+                    </tr>
+                    <tr>
+                        <td>Phó tổng biên tập phụ trách: Lâm Quang Hiếu</td>
+                        <td>Hotline: 0931.222.666</td>
+                    </tr>
+                    <tr>
+                        <td>© Toàn bộ bản quyền thuộc Tri thức</td>
+                        <td><a href="toasoan@zingnews.vn">Liên hệ: toasoan@zingnews.vn</a></td>
+                    </tr>
+                </table>
+            </div>
+        </footer>
+
+        <script src="./script.js"></script>
     </body>
 </html>
