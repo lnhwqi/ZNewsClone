@@ -14,10 +14,12 @@ document.body.addEventListener('click', function(event){
 
         searchBar.value="Nhập nội dung cần tìm...";
     }
-    // if(event.target !== moreListBottom && event.target !== moreListHead ){
-    //     moreListBottom.classList.remove('visibility');
-    //     moreListHead.classList.remove('visibility');
-    // }
+    if(event.target !== moreSign && event.target !== closeSign 
+        && event.target !== moreListBottom && event.target !== moreListHead 
+        && moreListBottom.classList.contains('visibility') && moreListHead.classList.contains('visibility')){
+        moreListBottom.classList.remove('visibility');
+        moreListHead.classList.remove('visibility');
+    }
 })
 searchBtn.addEventListener('click', function(){
     searchBtn.classList.toggle('active')
