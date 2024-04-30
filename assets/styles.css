@@ -88,9 +88,9 @@ img{
     color: #444444;
     border-bottom: 3px solid #fff;
 }
-.header .navigate a .header-sign{
+.header .navigate a .header-sign, .header .navigate a .fa-solid{
     width: 24px;
-    font-size: 16px;
+    font-size: 17px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,14 +169,13 @@ img{
     padding: 16px 0;
 }
 /*=============================================================================================================================*/
-.content{
-    margin: 0 auto;
-}
+
 .main{
     margin: 50px 0 30px 0;
 }
 .main .container{
     /* justify-content: space-between; */
+    /* width: 100%; */
 }
 .main a:hover{
     color: #04C3FA;
@@ -200,7 +199,6 @@ img{
     width: 128;
     height: 82px;
     object-fit: cover;
-
 }
 .main .left-main .left-main-item .left-item-title{
     margin-left: 12px;
@@ -222,9 +220,9 @@ img{
 }
 .main .center-main img{
     width: 100%;
-    height: 328px;
+    min-height: 328px;
     object-fit: cover;
-
+    object-position: center;
 }
 .main .center-main .center-title{
     padding: 15px 0 8px 0;
@@ -268,7 +266,7 @@ img{
     cursor: pointer;
 }
 .main .right-main{
-    max-width: 258px;
+   width: 258px;
 }
 .main .right-main-item{
     font-size: 16px;
@@ -288,6 +286,15 @@ img{
 }
 
 /* ===============================================content - book ==================*/
+.content{
+    /* margin: 0 auto; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
 .book{
     width: 100%;
 }
@@ -364,6 +371,7 @@ img{
 }
 /* ============================================multi */
 .multimedia{
+    
     width: 1162px;
     margin: 0 auto;
     background-color: #ffde76;
@@ -398,10 +406,13 @@ img{
 }
 .multimedia .media-content{
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+
 }
 .multimedia .media-content .media-content-left{
     display: block;
-    width: 582px;
+    width: auto;
     margin-right: 20px;
 }
 .multimedia .media-content .media-content-left img{
@@ -428,11 +439,11 @@ img{
     line-height: 1.43;
 }
 
-.multimedia .media-content .media-content-right .media-content-list{
+.multimedia .media-content .media-content-right{
     display: grid;
     grid-template-columns: auto auto;
     gap: 20px 16px;
-    width: 100%;
+    width: 58%;
 }
 .multimedia .media-content .media-content-right .media-content-right-item{
     width: 260px;
@@ -635,7 +646,7 @@ img{
     border-bottom: 1px solid #ddd;
     margin-bottom: 24px;
 }
-.news-type-1 .type-1-header a{
+.news-type-1 .type-1-header a, .daily-news-title a{
     padding-left: 20px;
     color: #333;
     font-weight: 600;
@@ -645,10 +656,10 @@ img{
 .news-type-1 .type-1-content{
     display: flex;
     width: 100%;
+    justify-content: space-between;
 }
 .news-type-1 .type-1-content .type-1-left{
-    max-width: 544px;
-    min-width: 540px;
+    width: 540px;
     padding-right: 24px ;
 }
 .news-type-1 .type-1-content .type-1-left img{
@@ -676,8 +687,7 @@ img{
 
 }
 .news-type-1 .type-1-content .type-1-center{
-    max-width: 278px;
-    min-width: 270px;
+    width: 278px;
     padding-right: 22px;
     border-right: 1px solid #ddd;
 }
@@ -702,6 +712,7 @@ img{
 }
 
 .news-type-1 .type-1-content .type-1-right{
+    width: 25%;
     padding-left: 21px;
 }
 .news-type-1 .type-1-content .type-1-right-item{
@@ -734,7 +745,6 @@ img{
 }
 /* =============================================================================== */
 .news-type-2 .container{
-    flex-direction: column;
 }
 .type-2-content{
     margin: 20px 0 30px 0;
@@ -813,6 +823,7 @@ img{
 }
 /* ============================================================================= */
 .magazine{
+    width: 100%;
     background-color: #eee;
     padding-bottom: 38px;
     margin-bottom: 30px;
@@ -942,6 +953,8 @@ img{
     display: flex;
     height: 442px;
     overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
 }
 .video .video-main{
     display: block;
@@ -950,9 +963,14 @@ img{
 .video .video-main:hover{
     cursor: pointer;
 }
+.video .video-main{
+    width: 70%;
+    height: 100%;
+}
 .video .video-main video{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .video .video-list{
     background-color: #eee;
@@ -960,6 +978,7 @@ img{
     height: 442px;
     overflow-y: scroll;
     overflow-x: hidden;
+    width: 30%;
 }
 .video .video-item{
     position: relative;
@@ -1011,14 +1030,17 @@ img{
 .footer td:first-child{
     padding-right: 16px; /* Add padding within cells */
 }
-.footer td:hover{
-    color: #888;
+/* =========================================================responsive=============================================================== */
+@media screen and (min-width: 1024px) and (max-width: 1161px) { 
+    
 }
-
-
-
-
-
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+}
+@media screen and (max-width: 768px) {
+    
+    
+}
 
 
 

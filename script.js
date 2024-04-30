@@ -5,7 +5,14 @@ const closeSign = document.getElementById('close-sign')
 const moreListHead = document.getElementById('more-list-head')
 const moreListBottom = document.getElementById('more-list-bottom')
 
+const mainCenterDesc = document.getElementById('main-center-desc')
 
+
+if (window.matchMedia("(max-width: 768px)").matches) {
+    if(mainCenterDesc.textContent.split(' ').length > 30){
+        mainCenterDesc.textContent = mainCenterDesc.textContent.split(' ').slice(0,23).join(' ') + ' ...'
+    }
+}
 
 document.body.addEventListener('click', function(event){
     if(event.target !== searchBtn && event.target !== searchBar && searchBar.classList.contains('visibility')){
@@ -19,6 +26,8 @@ document.body.addEventListener('click', function(event){
         && moreListBottom.classList.contains('visibility') && moreListHead.classList.contains('visibility')){
         moreListBottom.classList.remove('visibility');
         moreListHead.classList.remove('visibility');
+        closeSign.classList.toggle('visibility')
+        moreSign.classList.toggle('hidden')
     }
 })
 searchBtn.addEventListener('click', function(){

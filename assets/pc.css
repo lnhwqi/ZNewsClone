@@ -1,0 +1,141 @@
+.container{
+    width: 100%;
+    /* margin: 0 auto; */
+}
+.header .container{
+    overflow: hidden;
+    padding: 0 10px;
+}
+.header .navigate li:not(:last-child) a{
+    display: none;
+    /* font-size: 32px; */
+}
+.header .navigate li a{
+    margin: 0;
+}
+.header .navigate li .header-sign{
+    font-size: 24px;
+}
+.header .search{
+    /* display: none; */
+    order: 2;
+    padding: 12px ;
+    font-size: 20px;
+}
+.header #search-bar{
+    margin: 12px 10px 0 0;
+    padding: 18px;
+    border-radius: 16px;
+    width: 282px ;
+}
+.header .container{
+    display: flex;
+    align-items: center;
+}
+
+.header .logo{
+    order: 1;
+    height: 100%;
+    display: block;
+    /* margin-right: 50% ;
+    transform: translateX(50%); */
+}
+.header .logo a{
+    margin-right: 50% ;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin: 0;
+}
+.header .logo img{
+    height: 100%;
+}
+
+.header .navigate li a{
+    margin: 0;
+    padding: 12px 12px 13px 12px;
+}
+.main .container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.main .right-main{
+    padding-right: 20px;
+}
+.main .left-main{
+    width: 26%;
+}
+.main .center-main{
+    width: 44%;
+}
+.main .right-main{
+    width: 25%;
+    padding: 0;
+}
+.content .container{
+    width: 90%;
+}
+.book .book-item{
+    width: 19%;
+}
+.multimedia{
+    width: 95%;
+}
+.multimedia .container{
+    width: 95%;
+}
+.multimedia .media-content{
+    justify-content: space-between;
+}
+.multimedia .media-content .media-content-left{
+    width: 47%;
+    margin: 0;
+}
+.multimedia .media-content .media-content-right{
+    width: 52%;
+} 
+.multimedia .media-content .media-content-right{
+    grid-template-columns: 48% 48%;
+    gap: 4% 4%;
+}
+.multimedia .media-content .media-content-right .media-content-right-item{
+    width: 100%;
+}
+.news-type-1  .type-1-content{
+    width: 100%;
+}
+.news-type-1 .type-1-content .type-1-left{
+    width: 50%;
+    padding-right: 24px ;
+}
+.news-type-1 .type-1-content .type-1-center{
+    min-width: 20%;
+}
+.news-type-1 .type-1-content .type-1-right{
+    width: 30%;
+}
+
+.news-type-2 .type-2-content{
+    width: 100%;
+    grid-template-columns: 24% 24% 24% 24%;
+    /* gap: auto; */
+    column-gap: calc(4% / 3);
+}
+.news-type-2 .type-2-content .type-2-item{
+    width: auto
+}
+.magazine{
+    /* display: none; */
+}
+
+.magazine .maga-content .maga-item{
+    width: 23%;
+}
+.video{
+    width: 100%;
+}
+.footer{
+    padding: 20px 32px;
+}

@@ -6,6 +6,12 @@
         <link rel="stylesheet" href="./assets/styles.css"/>
         <script src="https://kit.fontawesome.com/298cd1d7bc.js" crossorigin="anonymous"></script>
         <link rel="icon" type="image/png" href="./assets/images/fav.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" media="(min-width: 1024px ) and (max-width: 1159px )" href="./assets/pc.css">
+        <link rel="stylesheet" media="(min-width: 740px ) and (max-width: 1023px )" href="./assets/tablet.css">
+        <link rel="stylesheet" media="(max-width: 740px )" href="./assets/mobile.css">
+
     </head>
     <body >
         <header class="header">
@@ -112,7 +118,7 @@
                 <div class="center-main">
                     <img src="https://photo.znews.vn/w480/Uploaded/lce_jwqqc/2024_03_22/z5273587903515_aefcb06bea73c713a7060a1339a8c7d4.jpg" alt="alt"/>
                     <h1 class="center-title"><a href="#!">Người Việt Nam đang đọc nhiều hơn</a></h1>
-                    <p class="center-desc">Độc giả đang có nhiều cách đọc hơn, kể cả cách đọc là không đọc nhờ hỏi trợ lý ảo. Điều đó đòi hỏi ngành Xuất bản phải tìm đến những cách đọc khác nhau để tạo ra sản phẩm phù hợp</p>
+                    <p id="main-center-desc" class="center-desc">Độc giả đang có nhiều cách đọc hơn, kể cả cách đọc là không đọc nhờ hỏi trợ lý ảo. Điều đó đòi hỏi ngành Xuất bản phải tìm đến những cách đọc khác nhau để tạo ra sản phẩm phù hợp</p>
                     <ul>
                         <li><a href="#!" class="link">Kết nối thị trường để xuất bản hội nhập quốc tế</a></li>
                     </ul>
@@ -183,24 +189,24 @@
                             <p class="media-left-desc">Theo Forbes, tất cả tỷ phú Gen Z đều được thừa kế tài sản từ gia đình với giá trị từ hơn 1 tỷ đến gần 5 tỷ USD.</p>
                         </div>
                         <div class="media-content-right">
-                            <div class="media-content-list">
-                                <div class="media-content-right-item">
-                                    <img src="https://photo.znews.vn/w360/Uploaded/wpdhnwhnw/2024_04_05/lan.jpg" alt="multi-item-logo">
-                                    <a class="item-title">Vợ sắp cưới của Titi (HKT) khoe dáng bên xế cổ</a>
-                                </div>
-                                <div class="media-content-right-item">
-                                    <img src="https://photo.znews.vn/w360/Uploaded/hgtmzz/2024_04_04/caudainhat_caotocbacnam_40_znews.jpg" alt="multi-item-logo">
-                                    <a class="item-title">Ngắm cây cầu dài nhất tuyến cao tốc Bắc - Nam sắp hoàn thành</a>
-                                </div>
-                                <div class="media-content-right-item">
-                                    <img src="https://photo.znews.vn/w360/Uploaded/wpdhnwhnw/2024_04_05/ngoiiii.jpg" alt="multi-item-logo">
-                                    <a class="item-title">Thúy Ngân đón sinh nhật trên biển</a>
-                                </div>
-                                <div class="media-content-right-item">
-                                    <img src="https://photo.znews.vn/w360/Uploaded/anqyy/2024_04_05/Iceberg_A23a_10_by_Andrew_Miller_Capture_North_Studios_1.jpeg" alt="multi-item-logo">
-                                    <a class="item-title">Ngợp tầm mắt trước tảng băng 1.000 tỷ tấn, rộng gấp 3 lần New York</a>
-                                </div>
+
+                            <div class="media-content-right-item">
+                                <img src="https://photo.znews.vn/w360/Uploaded/wpdhnwhnw/2024_04_05/lan.jpg" alt="multi-item-logo">
+                                <a class="item-title">Vợ sắp cưới của Titi (HKT) khoe dáng bên xế cổ</a>
                             </div>
+                            <div class="media-content-right-item">
+                                <img src="https://photo.znews.vn/w360/Uploaded/hgtmzz/2024_04_04/caudainhat_caotocbacnam_40_znews.jpg" alt="multi-item-logo">
+                                <a class="item-title">Ngắm cây cầu dài nhất tuyến cao tốc Bắc - Nam sắp hoàn thành</a>
+                            </div>
+                            <div class="media-content-right-item">
+                                <img src="https://photo.znews.vn/w360/Uploaded/wpdhnwhnw/2024_04_05/ngoiiii.jpg" alt="multi-item-logo">
+                                <a class="item-title">Thúy Ngân đón sinh nhật trên biển</a>
+                            </div>
+                            <div class="media-content-right-item">
+                                <img src="https://photo.znews.vn/w360/Uploaded/anqyy/2024_04_05/Iceberg_A23a_10_by_Andrew_Miller_Capture_North_Studios_1.jpeg" alt="multi-item-logo">
+                                <a class="item-title">Ngợp tầm mắt trước tảng băng 1.000 tỷ tấn, rộng gấp 3 lần New York</a>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -208,6 +214,7 @@
 
             <div class="daily-news">
                 <div class="container">
+                    <div class="daily-news-title"><a href="#!" style="display: none;">TRENDING</a></div>
                     <div class="daily-news-main">
                         <div class="news-main-item">
                             <img src="https://photo.znews.vn/w360/Uploaded/oplukaa/2024_04_03/Han.jpg" alt="">
