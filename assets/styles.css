@@ -853,9 +853,9 @@ img{
     align-items: center;
     border-radius: 4px;
     background-repeat: no-repeat;
-    background-size: auto 100%;; /* Initial zoomed size */
     transition: background-size 2s ease;
     background-position: center;
+    background-size: auto;
 }
 .maga-item:hover {
     background-size: auto 122%;

@@ -88,7 +88,7 @@
     margin: 0;
 }
 .main .container .center-main img{
-    height: 247px !important;
+    height: 254px !important;
     min-height: auto !important;
 }
 .main .container .center-main .center-title{
@@ -317,6 +317,7 @@
     width: 100% !important;
     max-height: 392px;
     border-radius: 12px !important;
+    object-fit: cover;
 }
 .maga-item::before{
     top: calc(392px  / 2)
