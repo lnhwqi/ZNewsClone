@@ -138,9 +138,9 @@ img{
     border-radius: 8px;
     initial-value: "hi";
 }
-.header .more-list{
+/* .header .more-list{
     width: 100vw;
-}
+} */
 .header .more-list-head{
     display: flex;
     background-color: #141329;

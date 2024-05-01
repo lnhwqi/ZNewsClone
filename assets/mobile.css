@@ -342,3 +342,42 @@
     padding: 0;
     margin: 0;
 }
+
+.header .more-list-head.visibility{
+    margin: 0;
+    padding: 20px 0 0 0;
+    display: grid !important;
+    grid-template-columns: 50% 50%;
+    height: calc(60vh);
+    /* height: 100%; */
+    /* z-index: 2; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* align-items: stretch; */
+}
+.header .more-list-head tr{
+    display: grid;
+    grid-template-columns: 100% 100%;
+    width: 100%;
+    top: 0;
+}
+.header .more-list-head td{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.header .more-list-head td a{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.header .more-list-bottom.visibility{
+    display: grid !important;
+    width: 100%;
+    top: 0;
+    margin-top: calc(60vh + 52px);
+    grid-template-columns: 50% 50%;
+    text-align: center;
+}
