@@ -83,7 +83,8 @@
 }
 .main .container .left-main .left-main-item img{
     width: 35%;
-    height: 102px;
+    min-width: 35%;
+    height: 104px;
 }
 .main .container .center-main{
     width: 100%;
@@ -216,7 +217,7 @@
     flex-direction: row;
     width: 100%;
     padding: 0;
-    gap: 15px;
+    gap: 4%;
 }
 .news-type-1 .type-1-content .type-1-center-item{
     width: 50%;
@@ -248,8 +249,8 @@
 }
 .news-type-2 .type-2-item .type-2-item-list{
     display: grid;
-    grid-template-columns: calc(50%-7.5px) calc(50%-7.5px);
-    column-gap: 15px;
+    grid-template-columns: 48% 48%;
+    column-gap: 4%;
     width: 100%;
 }
 .news-type-2 .type-2-item .type-2-title{
