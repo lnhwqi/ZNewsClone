@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <script src="https://kit.fontawesome.com/298cd1d7bc.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="./assets/images/fav.jpg">
+
+    <title>Template</title>
+</head>
+<body style="width: 100vw; height: 100vh; background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%); display: flex; justify-content: space-between; align-items: top; flex-direction: column;"> 
+    <div class="template-main" style=" display: flex; justify-content: top; align-items: top; flex-direction: column;">
+        <a href="./index.html"  style="width: 10%;"><img src="./assets/images/fav.jpg" alt="logo" style="width: 100%; margin: 20px; border: 1px solid #000 ;border-radius: 140%;"></a>
+        <div id="template-main-text" class="template-main-text" style="font-size: 1.4rem; font-weight: 700; color: #1a1d3d; margin: 20px; line-height: 1.4;"></div>   
+    </div>
+    <ul id="contact-list" style=" font-size: 2rem; display: flex; justify-content: center; margin-bottom: 20px; gap:24px;">
+        <li><a href="https://www.facebook.com/lwnhuy"><i class="fa-brands fa-facebook" style="color: #1a1d3d; padding: 12px; border: 1px solid #1a1d3d; border-radius: 180px;"></i></a></li>
+        <li><a href="https://github.com/lnhwqi/ZNewsClone"><i class="fa-brands fa-github" style="color: #1a1d3d; padding: 12px; border: 1px solid #1a1d3d; border-radius: 180px;"></i></a></li>
+        <li><a href="tel:+84948205746"><i class="fa-solid fa-phone" style="color: #1a1d3d; padding: 12px; border: 1px solid #1a1d3d; border-radius: 180px;"></i></a></li>
+        <li><a href="lnhuy2024@gmail.com"><i class="fa-solid fa-envelope" style="color: #1a1d3d; padding: 12px; border: 1px solid #1a1d3d; border-radius: 180px;"></i></a></li>
+    </ul>
+
+    <script>
+        const myString = "Im' Huy, I wanna sincerely sorry for your inconvenience, it will be completed soon! Thank you."
+
+        const characters = myString.split("");
+
+        console.log(characters)
+
+        function displayLetters() {
+            let index = 0; //start point
+            const interval = setInterval(function() {
+                if (index < characters.length) {
+                    // Display the next point
+                    document.getElementById("template-main-text").textContent += characters[index];
+                    index++;
+                } else {
+                    clearInterval(interval);
+                }
+            }, 45); 
+        }
+
+        displayLetters();
+    </script>
+</body>
+</html>
